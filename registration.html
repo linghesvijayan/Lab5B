@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e6; /* cream color */
+        }
+
+        /* Header */
+        .header {
+            background-color: #6f4e37; /* brown color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Center container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+
+        /* Form box */
+        .form-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #6f4e37;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5a3e2b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>User Registration</h2>
+    </div>
+
+    <div class="container">
+        <div class="form-box">
+            <form action="lab5b_q1.php" method="post">
+
+                <label for="matric">Matric:</label>
+                <input type="text" id="matric" name="matric" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">Please select</option>
+                    <option value="admin">Admin</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+    
